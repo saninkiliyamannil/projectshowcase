@@ -10,6 +10,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+  <!-- Animated Background Elements -->
+  <div class="bg-circles">
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+    <div class="circle-3"></div>
+    <div class="circle-4"></div>
+  </div>
+
   <!-- Header/Navigation -->
   <header id="main-header">
     <div class="container">
@@ -38,7 +46,7 @@
         <h2>Quality Products</h2>
         <p>Discover our range of carefully crafted solutions</p>
         <div class="cta-buttons">
-          <a href="#products" class="btn primary">View Products</a>
+          <a href="#products" class="btn primary pulse">View Products</a>
           <a href="#contact" class="btn secondary">Contact Us</a>
         </div>
       </div>
@@ -54,12 +62,13 @@
       <div class="product-detail" id="product-1">
         <div class="product-gallery">
           <div class="main-image">
-            <img src="images/products/product1-main.jpeg" alt="Product 1 Main View" id="mainImage1">
+            <img src="images/products/product1-main.jpg" alt="Product 1 Main View" id="mainImage1">
           </div>
           <div class="thumbnail-strip">
-            <img src="images/products/product1-angle1.jpeg" onclick="changeMainImage('mainImage1', this.src)" alt="Product 1 Angle 1">
-            <img src="images/products/product1-angle2.jpeg" onclick="changeMainImage('mainImage1', this.src)" alt="Product 1 Angle 2">
-            <img src="images/products/product1-angle3.jpeg" onclick="changeMainImage('mainImage1', this.src)" alt="Product 1 Angle 3">
+            <img src="images/products/product1-main.jpg" onclick="changeMainImage('mainImage1', this.src)" alt="Product 1 Main View">
+            <img src="images/products/product1-angle1.jpg" onclick="changeMainImage('mainImage1', this.src)" alt="Product 1 Angle 1">
+            <img src="images/products/product1-angle2.jpg" onclick="changeMainImage('mainImage1', this.src)" alt="Product 1 Angle 2">
+            <img src="images/products/product1-angle3.jpg" onclick="changeMainImage('mainImage1', this.src)" alt="Product 1 Angle 3">
           </div>
         </div>
         <div class="product-info">
@@ -84,7 +93,7 @@
               <p>Engineered to withstand daily wear while maintaining its premium appearance.</p>
             </div>
           </div>
-          <a href="#contact" class="btn primary product-cta">Inquire Now</a>
+          <a href="https://wa.me/1234567890?text=Hi,%20I'm%20interested%20in%20Product%20One.%20Is%20it%20available?" class="btn primary product-cta pulse">Inquire Now</a>
         </div>
       </div>
 
@@ -92,12 +101,13 @@
       <div class="product-detail" id="product-2">
         <div class="product-gallery">
           <div class="main-image">
-            <img src="images/products/product2-main.jpeg" alt="Product 2 Main View" id="mainImage2">
+            <img src="images/products/product2-main.jpg" alt="Product 2 Main View" id="mainImage2">
           </div>
           <div class="thumbnail-strip">
-            <img src="images/products/product2-angle1.jpeg" onclick="changeMainImage('mainImage2', this.src)" alt="Product 2 Angle 1">
-            <img src="images/products/product2-angle2.jpeg" onclick="changeMainImage('mainImage2', this.src)" alt="Product 2 Angle 2">
-            <img src="images/products/product2-angle3.jpeg" onclick="changeMainImage('mainImage2', this.src)" alt="Product 2 Angle 3">
+            <img src="images/products/product2-main.jpg" onclick="changeMainImage('mainImage2', this.src)" alt="Product 2 Main View">
+            <img src="images/products/product2-angle1.jpg" onclick="changeMainImage('mainImage2', this.src)" alt="Product 2 Angle 1">
+            <img src="images/products/product2-angle2.jpg" onclick="changeMainImage('mainImage2', this.src)" alt="Product 2 Angle 2">
+            <img src="images/products/product2-angle3.jpg" onclick="changeMainImage('mainImage2', this.src)" alt="Product 2 Angle 3">
           </div>
         </div>
         <div class="product-info">
@@ -122,7 +132,7 @@
               <p>Features a modular design that adapts to various use cases.</p>
             </div>
           </div>
-          <a href="#contact" class="btn primary product-cta">Inquire Now</a>
+          <a href="https://wa.me/1234567890?text=Hi,%20I'm%20interested%20in%20Product%20Two.%20Is%20it%20available?" class="btn primary product-cta pulse">Inquire Now</a>
         </div>
       </div>
     </div>
@@ -137,7 +147,7 @@
         <!-- Accessory 1 -->
         <div class="product-card">
           <div class="product-card-image">
-            <img src="images/products/accessory1-main.jpeg" alt="Accessory 1">
+            <img src="images/products/accessory1-main.jpg" alt="Accessory 1">
           </div>
           <div class="product-card-content">
             <h3>Essential Accessory A</h3>
@@ -151,19 +161,23 @@
                   <i class="fas fa-check"></i>
                   <span>Affordable price point</span>
                 </div>
+                <div class="feature">
+                  <i class="fas fa-check"></i>
+                  <span>Perfect companion</span>
+                </div>
               </div>
               <div class="description">
                 <p>A complementary accessory for our main product with core features.</p>
               </div>
             </div>
-            <a href="#contact" class="details-btn">Inquire Now</a>
+            <a href="https://wa.me/1234567890?text=Hi,%20I'm%20interested%20in%20Essential%20Accessory%20A.%20Is%20it%20available?" class="details-btn pulse">Inquire Now</a>
           </div>
         </div>
 
         <!-- Accessory 2 -->
         <div class="product-card">
           <div class="product-card-image">
-            <img src="images/products/accessory2-main.jpeg" alt="Accessory 2">
+            <img src="images/products/accessory2-main.jpg" alt="Accessory 2">
           </div>
           <div class="product-card-content">
             <h3>Essential Accessory B</h3>
@@ -177,19 +191,23 @@
                   <i class="fas fa-check"></i>
                   <span>Easy to use</span>
                 </div>
+                <div class="feature">
+                  <i class="fas fa-check"></i>
+                  <span>Durable construction</span>
+                </div>
               </div>
               <div class="description">
                 <p>Designed for specific applications with optimized performance.</p>
               </div>
             </div>
-            <a href="#contact" class="details-btn">Inquire Now</a>
+            <a href="https://wa.me/1234567890?text=Hi,%20I'm%20interested%20in%20Essential%20Accessory%20B.%20Is%20it%20available?" class="details-btn pulse">Inquire Now</a>
           </div>
         </div>
 
         <!-- Accessory 3 -->
         <div class="product-card">
           <div class="product-card-image">
-            <img src="images/products/accessory3-main.jpeg" alt="Accessory 3">
+            <img src="images/products/accessory3-main.jpg" alt="Accessory 3">
           </div>
           <div class="product-card-content">
             <h3>Essential Accessory C</h3>
@@ -203,12 +221,16 @@
                   <i class="fas fa-check"></i>
                   <span>Travel-friendly</span>
                 </div>
+                <div class="feature">
+                  <i class="fas fa-check"></i>
+                  <span>Lightweight design</span>
+                </div>
               </div>
               <div class="description">
                 <p>The compact solution for users on the go.</p>
               </div>
             </div>
-            <a href="#contact" class="details-btn">Inquire Now</a>
+            <a href="https://wa.me/1234567890?text=Hi,%20I'm%20interested%20in%20Essential%20Accessory%20C.%20Is%20it%20available?" class="details-btn pulse">Inquire Now</a>
           </div>
         </div>
       </div>
@@ -234,7 +256,7 @@
           </div>
         </div>
         <div class="about-image">
-          <img src="images/team.jpeg" alt="Our Team">
+          <img src="images/team.jpg" alt="Our Team">
         </div>
       </div>
     </div>
@@ -251,7 +273,7 @@
             <i class="fab fa-whatsapp"></i>
             <div>
               <h4>WhatsApp</h4>
-              <p><a href="https://wa.me/1234567890" target="_blank">+1 (234) 567-890</a></p>
+              <p><a href="https://wa.me/1234567890" target="_blank" class="pulse">+1 (234) 567-890</a></p>
             </div>
           </div>
           <div class="contact-item phone">
@@ -317,7 +339,7 @@
           <h3>Contact Info</h3>
           <p><i class="fas fa-map-marker-alt"></i> 123 Business Ave, City, State</p>
           <p><i class="fas fa-phone"></i> <a href="tel:+1234567890">(123) 456-7890</a></p>
-          <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/1234567890">WhatsApp</a></p>
+          <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/1234567890" class="pulse">WhatsApp</a></p>
         </div>
       </div>
       <div class="footer-bottom">
