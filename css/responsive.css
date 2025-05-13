@@ -17,10 +17,6 @@
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
-  .contact-content {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* Mobile Devices (up to 767px) */
@@ -38,17 +34,17 @@
   #main-nav {
     position: fixed;
     top: 80px;
-    left: -100%;
+    right: -100%;
     width: 80%;
     height: calc(100vh - 80px);
-    background: var(--white);
+    background: var(--dark-color);
     box-shadow: var(--shadow);
     transition: var(--transition);
     z-index: 999;
   }
   
   #main-nav.active {
-    left: 0;
+    right: 0;
   }
   
   #main-nav ul {
