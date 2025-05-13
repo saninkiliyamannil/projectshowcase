@@ -1,0 +1,138 @@
+/* Tablet Devices (768px - 1024px) */
+@media (max-width: 1024px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-image {
+    order: -1;
+    margin-bottom: 30px;
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+  section {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  /* Header */
+  #main-nav {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 80%;
+    height: calc(100vh - 80px);
+    background: var(--white);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    z-index: 999;
+  }
+  
+  #main-nav.active {
+    left: 0;
+  }
+  
+  #main-nav ul {
+    flex-direction: column;
+    padding: 30px;
+  }
+  
+  #main-nav ul li {
+    margin: 0 0 20px;
+  }
+  
+  .mobile-menu-btn {
+    display: block;
+  }
+  
+  /* Hero */
+  .hero {
+    height: auto;
+    padding: 150px 0 80px;
+  }
+  
+  .hero-content h2 {
+    font-size: 2.5rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Products */
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .footer-section {
+    margin-bottom: 30px;
+  }
+  
+  /* General Adjustments */
+  .container {
+    width: 95%;
+  }
+  
+  .product-detail,
+  .about-content,
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .thumbnail-strip {
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+  
+  .thumbnail-strip img {
+    min-width: 70px;
+  }
+}
+
+/* Small Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .btn {
+    padding: 10px 25px;
+  }
+  
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
