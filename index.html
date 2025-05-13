@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Product Showcase</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header/Navigation -->
+  <header id="main-header">
+    <div class="container">
+      <div class="logo">
+        <h1>Brand<span>Name</span></h1>
+      </div>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#main-products">Main Products</a></li>
+          <li><a href="#sub-products">Sub Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h2>Premium Quality Products</h2>
+        <p>Discover our innovative solutions designed for excellence</p>
+        <div class="cta-buttons">
+          <a href="#main-products" class="btn primary">View Products</a>
+          <a href="#contact" class="btn secondary">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Products Section -->
+  <section id="main-products" class="products-section">
+    <div class="container">
+      <h2 class="section-title">Our Main Products</h2>
+      
+      <!-- Product 1 -->
+      <div class="product-detail" id="product-1">
+        <div class="product-gallery">
+          <div class="main-image">
+            <img src="images/products/product1-main.jpg" alt="Product 1 Main View" id="mainImage1">
+          </div>
+          <div class="thumbnail-strip">
+            <img src="images/products/product1-angle1.jpg" onclick="changeMainImage('mainImage1', this.src)" alt="Product 1 Angle 1">
+            <img src="images/products/product1-angle2.jpg" onclick="changeMainImage('mainImage1', this.src)" alt="Product 1 Angle 2">
+            <img src="images/products/product1-angle3.jpg" onclick="changeMainImage('mainImage1', this.src)" alt="Product 1 Angle 3">
+          </div>
+        </div>
+        <div class="product-info">
+          <h3>Premium Product 1</h3>
+          <div class="key-features">
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>High-quality durable material</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Advanced technology integration</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>3-year warranty included</span>
+            </div>
+          </div>
+          <div class="description">
+            <p>Our flagship product combines cutting-edge technology with elegant design. Perfect for professional and personal use, it delivers unmatched performance and reliability.</p>
+            <p>Engineered to withstand daily wear while maintaining its premium appearance.</p>
+          </div>
+          <button class="accordion-btn">Technical Specifications</button>
+          <div class="accordion-content">
+            <table>
+              <tr>
+                <th>Material</th>
+                <td>Premium Grade A</td>
+              </tr>
+              <tr>
+                <th>Dimensions</th>
+                <td>10" x 5" x 3"</td>
+              </tr>
+              <tr>
+                <th>Weight</th>
+                <td>1.2 lbs</td>
+              </tr>
+            </table>
+          </div>
+          <a href="#contact" class="btn primary product-cta">Inquire Now</a>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-detail" id="product-2">
+        <div class="product-gallery">
+          <div class="main-image">
+            <img src="images/products/product2-main.jpg" alt="Product 2 Main View" id="mainImage2">
+          </div>
+          <div class="thumbnail-strip">
+            <img src="images/products/product2-angle1.jpg" onclick="changeMainImage('mainImage2', this.src)" alt="Product 2 Angle 1">
+            <img src="images/products/product2-angle2.jpg" onclick="changeMainImage('mainImage2', this.src)" alt="Product 2 Angle 2">
+            <img src="images/products/product2-angle3.jpg" onclick="changeMainImage('mainImage2', this.src)" alt="Product 2 Angle 3">
+          </div>
+        </div>
+        <div class="product-info">
+          <h3>Premium Product 2</h3>
+          <div class="key-features">
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Eco-friendly materials</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Multi-functional design</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Easy maintenance</span>
+            </div>
+          </div>
+          <div class="description">
+            <p>Our innovative second flagship product offers sustainable solutions without compromising on quality. Designed for the modern user who values both performance and environmental responsibility.</p>
+            <p>Features a modular design that adapts to various use cases.</p>
+          </div>
+          <button class="accordion-btn">Technical Specifications</button>
+          <div class="accordion-content">
+            <table>
+              <tr>
+                <th>Material</th>
+                <td>Recycled Composite</td>
+              </tr>
+              <tr>
+                <th>Dimensions</th>
+                <td>12" x 6" x 4"</td>
+              </tr>
+              <tr>
+                <th>Weight</th>
+                <td>1.5 lbs</td>
+              </tr>
+            </table>
+          </div>
+          <a href="#contact" class="btn primary product-cta">Inquire Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sub Products Section -->
+  <section id="sub-products" class="products-grid-section">
+    <div class="container">
+      <h2 class="section-title">Our Sub Products</h2>
+      <div class="products-grid">
+        
+        <!-- Sub Product 1 -->
+        <div class="product-card">
+          <div class="product-card-image">
+            <img src="images/products/subproduct1-main.jpg" alt="Sub Product 1">
+          </div>
+          <div class="product-card-content">
+            <h3>Essential Product A</h3>
+            <div class="key-features">
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>Compact design</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>Affordable price point</span>
+              </div>
+            </div>
+            <div class="description">
+              <p>A budget-friendly version of our main product with core features.</p>
+            </div>
+            <button class="details-btn">View Details</button>
+          </div>
+        </div>
+
+        <!-- Sub Product 2 -->
+        <div class="product-card">
+          <div class="product-card-image">
+            <img src="images/products/subproduct2-main.jpg" alt="Sub Product 2">
+          </div>
+          <div class="product-card-content">
+            <h3>Essential Product B</h3>
+            <div class="key-features">
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>Specialized function</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>Easy to use</span>
+              </div>
+            </div>
+            <div class="description">
+              <p>Designed for specific applications with optimized performance.</p>
+            </div>
+            <button class="details-btn">View Details</button>
+          </div>
+        </div>
+
+        <!-- Sub Product 3 -->
+        <div class="product-card">
+          <div class="product-card-image">
+            <img src="images/products/subproduct3-main.jpg" alt="Sub Product 3">
+          </div>
+          <div class="product-card-content">
+            <h3>Essential Product C</h3>
+            <div class="key-features">
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>Portable version</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check"></i>
+                <span>Travel-friendly</span>
+              </div>
+            </div>
+            <div class="description">
+              <p>The compact solution for users on the go.</p>
+            </div>
+            <button class="details-btn">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2 class="section-title">About Our Company</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Founded in 2010, we've been dedicated to creating high-quality products that combine innovation with reliability. Our mission is to provide solutions that make a difference in our customers' lives.</p>
+          <p>With a team of experienced professionals and a commitment to continuous improvement, we've established ourselves as a trusted name in our industry.</p>
+          <div class="mission-values">
+            <h4>Our Values:</h4>
+            <ul>
+              <li><i class="fas fa-star"></i> Quality craftsmanship</li>
+              <li><i class="fas fa-star"></i> Customer satisfaction</li>
+              <li><i class="fas fa-star"></i> Sustainable practices</li>
+              <li><i class="fas fa-star"></i> Innovative solutions</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="images/team.jpg" alt="Our Team">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="contact-content">
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn primary">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>123 Business Avenue<br>City, State 12345</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <p><a href="tel:+1234567890">(123) 456-7890</a></p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <p><a href="mailto:info@brandname.com">info@brandname.com</a></p>
+          </div>
+          <div class="business-hours">
+            <h4>Business Hours</h4>
+            <p>Monday - Friday: 9am - 5pm</p>
+            <p>Saturday: 10am - 2pm</p>
+            <p>Sunday: Closed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <div class="map-section">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215373510518!2d-73.98784492423915!3d40.74844097138983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"></iframe>
+  </div>
+
+  <!-- Footer -->
+  <footer id="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>BrandName</h3>
+          <p>Quality products for discerning customers.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#main-products">Main Products</a></li>
+            <li><a href="#sub-products">Sub Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Business Ave, City, State</p>
+          <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+          <p><i class="fas fa-envelope"></i> info@brandname.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 BrandName. All Rights Reserved.</p>
+      </div>
+    </div>
+    <a href="#home" class="back-to-top" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </footer>
+
+  <script src="js/product-gallery.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
