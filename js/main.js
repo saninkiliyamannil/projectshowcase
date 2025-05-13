@@ -21,19 +21,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  // Accordion functionality
-  const accordionBtns = document.querySelectorAll('.accordion-btn');
-  
-  accordionBtns.forEach(btn => {
-    btn.addEventListener('click', function() {
+  // Product details toggle
+  const productTitles = document.querySelectorAll('.product-info h3');
+  productTitles.forEach(title => {
+    title.addEventListener('click', function() {
       this.classList.toggle('active');
-      const content = this.nextElementSibling;
-      
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + 'px';
-      }
+      this.parentElement.classList.toggle('active');
+    });
+  });
+  
+  // Product card details toggle
+  const productCardTitles = document.querySelectorAll('.product-card h3');
+  productCardTitles.forEach(title => {
+    title.addEventListener('click', function() {
+      this.classList.toggle('active');
+      this.parentElement.classList.toggle('active');
     });
   });
   
@@ -85,28 +87,6 @@ document.addEventListener('DOMContentLoaded', function() {
           behavior: 'smooth'
         });
       }
-    });
-  });
-  
-  // Form submission
-  const contactForm = document.getElementById('contactForm');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      // Here you would typically send the form data to a server
-      // For demonstration, we'll just show an alert
-      alert('Thank you for your message! We will get back to you soon.');
-      this.reset();
-    });
-  }
-  
-  // Product details modal (for sub-products)
-  const detailBtns = document.querySelectorAll('.details-btn');
-  detailBtns.forEach(btn => {
-    btn.addEventListener('click', function() {
-      // In a real implementation, this would open a modal with more details
-      alert('This would open a detailed view of the product with more information.');
     });
   });
 });
